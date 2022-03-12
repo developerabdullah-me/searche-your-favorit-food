@@ -38,7 +38,9 @@ const searchBtn=()=>{
         </div>
         `;
         searchresult.appendChild(div);
-      })  
+      }) 
+      const clearDtails=displayDtails()
+      clearDtails.textContent ="" 
      }
 
     //  console.log(url)
@@ -56,7 +58,7 @@ searchBtn()
 // food detail
 const displayDtails= meal=>{
     const mealDtails=document.getElementById('mealDtail')
-    mealDtails.textContent='';
+    mealDtails.innerHTML='';
   const div=document.createElement('div')
 // div.classList.add("card")
 div.innerHTML=`
